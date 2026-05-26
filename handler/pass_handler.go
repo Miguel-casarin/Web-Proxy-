@@ -1,20 +1,42 @@
-// recebe todas as rquisições
 package handler
 
 import (
-"net/http" // servidor HTTP 
-"net/url" // manipulação e parsing de URLs
-"strings"
-
-"web-proxy/config"
-"web-proxy/logger"
+	"io"
+	"net/http"
 )
 
-func proxy(conf *config.Config, log *logger.Logger) http.HandlerFunc {
-	return func(w http.ResponseWriter, r *http.Request) {
-		if r.Method == http.MethodConnect {
+func PassHandler(w http.ResponseWriter, r *http.Request, destinationURLURL string) {
+	
+	// Cria e guarda a requisição
+	req, err := http.NewRequest(r.Method, destinationURLURL, r.Body)
 
-			http.Error(w, "CONNECT nao implementado aqui", 501)
-			return
+	if err != nil {
+		http.Error(w, "Erro ao criar requisicao", 500)
+		return
 	}
-}
+
+	// copia os headers do cliente 
+	for key, values := range r.Header {
+		for _, v := range values {
+			req.Header.Add(key, v)
+		}
+	}
+
+	// executa a requisição
+	client := &http.Client{}
+	response, err := client.Do(req)
+
+	defer response.Body.Close()
+
+	// Copia headers da resposta de volta ao cliente
+	for key, values := range response.Header {
+		for _, v := range values {
+			w.Header().Add(key, v)
+		}
+	}
+
+	w.WriteHeader(response.StatusCode)
+
+	// copia a pagina acessada
+	io.Copy(w, resp.Body)
+}	
