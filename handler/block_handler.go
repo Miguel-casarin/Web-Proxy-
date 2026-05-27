@@ -3,7 +3,7 @@ package handler
 import (
 	"html/template"
 	"net/http"
-	)
+)
 
 // BlockData e passado para o template HTML.
 type BlockData struct {

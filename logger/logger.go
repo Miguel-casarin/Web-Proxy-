@@ -43,7 +43,7 @@ func (l *Logger) Write(rawURL, action string) {
 	}
 
 	l.mu.Lock()
-	// adquire o lock — outras goroutines ficam em fila aqui
+	// adquire o lock, outras goroutines ficam em fila aqui
 	defer l.mu.Unlock() // libera o lock ao sair da funcao
 	
 	l.entries = append(l.entries, entry)

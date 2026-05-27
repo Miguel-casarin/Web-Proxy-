@@ -6,7 +6,7 @@ import (
 )
 
 func PassHandler(w http.ResponseWriter, r *http.Request, destinationURLURL string) {
-	
+
 	// Cria e guarda a requisição
 	req, err := http.NewRequest(r.Method, destinationURLURL, r.Body)
 
@@ -15,7 +15,7 @@ func PassHandler(w http.ResponseWriter, r *http.Request, destinationURLURL strin
 		return
 	}
 
-	// copia os headers do cliente 
+	// copia os headers do cliente
 	for key, values := range r.Header {
 		for _, v := range values {
 			req.Header.Add(key, v)
@@ -30,7 +30,7 @@ func PassHandler(w http.ResponseWriter, r *http.Request, destinationURLURL strin
 
 	// Copia headers da resposta de volta ao cliente
 	for key, values := range response.Header {
-		for _, v := range values {
+		for _, v := range values { // no go não existe while, aqui e um for quer tu não que pegar o indice
 			w.Header().Add(key, v)
 		}
 	}
@@ -38,5 +38,5 @@ func PassHandler(w http.ResponseWriter, r *http.Request, destinationURLURL strin
 	w.WriteHeader(response.StatusCode)
 
 	// copia a pagina acessada
-	io.Copy(w, resp.Body)
-}	
+	io.Copy(w, response.Body)
+}
