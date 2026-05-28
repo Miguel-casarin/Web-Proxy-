@@ -24,7 +24,13 @@ func PassHandler(w http.ResponseWriter, r *http.Request, destinationURLURL strin
 
 	// executa a requisição
 	client := &http.Client{}
+
 	response, err := client.Do(req)
+
+	if err != nil {
+		http.Error(w, "Erro ao acessar o destino", 502)
+		return
+	}
 
 	defer response.Body.Close()
 

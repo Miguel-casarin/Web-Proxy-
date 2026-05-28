@@ -3,7 +3,6 @@ package handler
 import (
 	"net/http" // servidor HTTP
 	"net/url"  // manipulação e parsing de URLs
-	"strings"
 
 	"web-proxy/config"
 	"web-proxy/logger"
@@ -16,7 +15,7 @@ func Proxy(conf *config.Config, log *logger.Logger) http.HandlerFunc {
 			return
 		}
 
-		destinationURL := strings.TrimPrefix(r.URL.Path, "/")
+		destinationURL := r.URL.String()
 
 		// separa a url de destino em protocolo, host e path
 		target, err := url.Parse(destinationURL)
