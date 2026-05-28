@@ -3,6 +3,7 @@ package handler
 import (
 	"io"
 	"net/http"
+	"strings"
 )
 
 func PassHandler(w http.ResponseWriter, r *http.Request, destinationURLURL string) {
@@ -17,6 +18,10 @@ func PassHandler(w http.ResponseWriter, r *http.Request, destinationURLURL strin
 
 	// copia os headers do cliente
 	for key, values := range r.Header {
+
+		if strings.EqualFold(key, "Accept-Encoding") {
+			continue
+		}
 		for _, v := range values {
 			req.Header.Add(key, v)
 		}

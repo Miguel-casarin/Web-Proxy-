@@ -1033,5 +1033,840 @@
   "timestamp": "2026-05-27T23:07:55-03:00",
   "url": "http://detectportal.firefox.com/success.txt?ipv6",
   "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:44:29-03:00",
+  "url": "http://http.badssl.com/",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:44:30-03:00",
+  "url": "http://http.badssl.com/style.css",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:44:30-03:00",
+  "url": "http://http.badssl.com/icons/favicon-red.ico",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:44:30-03:00",
+  "url": "http://http.badssl.com/icons/icon-red.png",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:44:34-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:44:34-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:44:34-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:44:35-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:44:35-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:45:18-03:00",
+  "url": "http://http.badssl.com/",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:45:18-03:00",
+  "url": "http://http.badssl.com/style.css",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:45:18-03:00",
+  "url": "http://http.badssl.com/icons/icon-red.png",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-27T23:45:18-03:00",
+  "url": "http://http.badssl.com/icons/favicon-red.ico",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:06:54-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:06:54-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:06:54-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:06:54-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:06:54-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:07:31-03:00",
+  "url": "http://lushsilverquietsunset.neverssl.com/online/",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:07:55-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:07:55-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:07:55-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:07:55-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:07:55-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:08:43-03:00",
+  "url": "http://lushsilverquietsunset.neverssl.com/online/",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:08:56-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:08:56-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:08:56-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:08:56-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:08:56-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:09:56-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:09:56-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:09:56-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:09:57-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:09:57-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:10:57-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:10:57-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:10:57-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:10:57-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:10:57-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:11:58-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:11:58-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:11:58-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:11:58-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:11:58-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:13:14-03:00",
+  "url": "http://lushsilverquietsunset.neverssl.com/online/",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:14:00-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:14:00-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:14:00-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:14:00-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:14:00-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:14:45-03:00",
+  "url": "http://lushsilverquietsunset.neverssl.com/online/",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:15:01-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:15:01-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:15:01-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:15:01-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:15:01-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:16:02-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:16:02-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:16:02-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:16:02-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:16:02-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:17:03-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:17:03-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:17:03-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:17:03-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:17:03-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:18:04-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:18:04-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:18:04-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:18:04-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:18:04-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:19:05-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:19:05-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:19:05-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:19:05-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:19:05-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:20:06-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:20:06-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:20:06-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:20:06-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:20:06-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:21:07-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:21:07-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:21:07-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:21:07-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:21:07-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:22:08-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:22:08-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:22:08-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:22:08-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:22:08-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:23:09-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:23:09-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:23:09-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:23:09-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:23:09-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:24:10-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:24:10-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:24:10-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:24:10-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:24:10-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:25:11-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:25:11-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:25:11-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:25:11-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:25:11-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:26:13-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:26:13-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:26:13-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:26:13-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:26:13-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:27:13-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:27:13-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:27:13-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:27:13-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:27:13-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:28:14-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:28:14-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:28:14-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:28:14-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:28:14-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:29:15-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:29:15-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:29:15-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:29:15-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:29:15-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:30:16-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:30:16-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:30:16-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:30:16-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:30:16-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:31:18-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:31:18-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:31:18-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:31:18-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:31:18-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:32:18-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:32:18-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:32:18-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:32:18-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:32:18-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:33:20-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:33:20-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:33:20-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:33:20-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:33:20-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:34:20-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:34:20-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:34:20-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:34:20-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:34:20-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:35:22-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:35:22-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:35:22-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:35:22-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:35:22-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:36:23-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:36:23-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:36:23-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:36:23-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:36:23-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:37:24-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:37:24-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:37:24-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:37:24-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "filtrado"
+ },
+ {
+  "timestamp": "2026-05-28T00:37:24-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "filtrado"
  }
 ]

@@ -20,6 +20,10 @@ func FilterHandler(w http.ResponseWriter, r *http.Request, targetURL string, wor
 	}
 
 	for key, values := range r.Header {
+
+		if strings.EqualFold(key, "Accept-Encoding") {
+			continue
+		}
 		for _, v := range values {
 			req.Header.Add(key, v)
 		}
@@ -36,7 +40,12 @@ func FilterHandler(w http.ResponseWriter, r *http.Request, targetURL string, wor
 	defer response.Body.Close()
 
 	for key, values := range response.Header {
+
 		if strings.EqualFold(key, "content-length") {
+			continue
+		}
+
+		if strings.EqualFold(key, "content-encoding") {
 			continue
 		}
 		for _, v := range values {
