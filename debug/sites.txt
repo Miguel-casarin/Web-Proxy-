@@ -1,7 +1,0 @@
-http://neverssl.com/
-ttp://httpforever.com/
-http://http.badssl.com/
-https://captive.apple.com/
-http://detectportal.firefox.com/success.txt
-http://www.msftconnecttest.com/connecttest.txt
-http://lushsilverquietsunset.neverssl.com/online/
