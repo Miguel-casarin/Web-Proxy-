@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambiente de Teste - Censura</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; background-color: #f4f4f9; }
+        h1 { color: #333; text-align: center; }
+        .description { text-align: center; margin-bottom: 30px; color: #555; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-left: 4px solid #d9534f; }
+        .bad-word { font-weight: bold; color: #d9534f; font-size: 1.1em; }
+        .expected-word { color: #5cb85c; font-style: italic; font-weight: bold; }
+        .label { font-size: 0.85em; color: #777; margin-top: 10px; display: block; }
+    </style>
+</head>
+<body>
+
+    <h1>Teste do Algoritmo de Censura</h1>
+    <p class="description">As palavras em vermelho devem ser identificadas e substituídas.</p>
+
+    <div class="grid-container">
+        <div class="card">
+            <div>Original: <span class="bad-word">foda</span></div>
+            <span class="label">Esperado: <span class="expected-word">diabos</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">merda</span></div>
+            <span class="label">Esperado: <span class="expected-word">macacos me mordam</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">retardado</span></div>
+            <span class="label">Esperado: <span class="expected-word">ingenuo</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">caralho</span></div>
+            <span class="label">Esperado: <span class="expected-word">caramba</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">porra</span></div>
+            <span class="label">Esperado: <span class="expected-word">poxa</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">filho da puta</span></div>
+            <span class="label">Esperado: <span class="expected-word">filho da mãe</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">puta que pariu</span></div>
+            <span class="label">Esperado: <span class="expected-word">puxa vida</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">cu</span></div>
+            <span class="label">Esperado: <span class="expected-word">traseiro</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">tomar no cu</span></div>
+            <span class="label">Esperado: <span class="expected-word">catar coquinho</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">bosta</span></div>
+            <span class="label">Esperado: <span class="expected-word">titica</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">cacete</span></div>
+            <span class="label">Esperado: <span class="expected-word">cacetada</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">babaca</span></div>
+            <span class="label">Esperado: <span class="expected-word">bobão</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">otario</span></div>
+            <span class="label">Esperado: <span class="expected-word">bobo</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">escroto</span></div>
+            <span class="label">Esperado: <span class="expected-word">desagradável</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">arrombado</span></div>
+            <span class="label">Esperado: <span class="expected-word">inconveniente</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">cuzao</span></div>
+            <span class="label">Esperado: <span class="expected-word">covarde</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">fuder</span></div>
+            <span class="label">Esperado: <span class="expected-word">danar</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">fudido</span></div>
+            <span class="label">Esperado: <span class="expected-word">lascado</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">putaria</span></div>
+            <span class="label">Esperado: <span class="expected-word">bagunça</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">puta</span></div>
+            <span class="label">Esperado: <span class="expected-word">danada</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">pica</span></div>
+            <span class="label">Esperado: <span class="expected-word">picolé</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">buceta</span></div>
+            <span class="label">Esperado: <span class="expected-word">florzinha</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">cagao</span></div>
+            <span class="label">Esperado: <span class="expected-word">medroso</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">corno</span></div>
+            <span class="label">Esperado: <span class="expected-word">iludido</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">piranha</span></div>
+            <span class="label">Esperado: <span class="expected-word">espertinha</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">vagabunda</span></div>
+            <span class="label">Esperado: <span class="expected-word">preguiçosa</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">desgraça</span></div>
+            <span class="label">Esperado: <span class="expected-word">poxa vida</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">pau no cu</span></div>
+            <span class="label">Esperado: <span class="expected-word">chato de galocha</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">caceta</span></div>
+            <span class="label">Esperado: <span class="expected-word">carambola</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">punheta</span></div>
+            <span class="label">Esperado: <span class="expected-word">bobeira</span></span>
+        </div>
+        <div class="card">
+            <div>Original: <span class="bad-word">What?</span></div>
+            <span class="label">Esperado: <span class="expected-word">testelllllllll</span></span>
+        </div>
+    </div>
+
+</body>
+</html>
