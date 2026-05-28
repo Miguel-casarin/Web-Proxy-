@@ -1,12 +1,12 @@
 {
   "bloqueados": [
     "neverssl.com/",
-    "http://httpforever.com/",
-    "http://http.badssl.com/",
-    "https://captive.apple.com/",
-    "https://detectportal.firefox.com/success.txt",
-    "http://www.msftconnecttest.com/connecttest.txt",
-    "https://lushsilverquietsunset.neverssl.com/online/"
+    "httpforever.com/",
+    "http.badssl.com/",
+    "captive.apple.com/",
+    "detectportal.firefox.com/success.txt",
+    "www.msftconnecttest.com/connecttest.txt",
+    "lushsilverquietsunset.neverssl.com/online/"
     
   ]
 }
