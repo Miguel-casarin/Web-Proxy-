@@ -67,6 +67,9 @@ Clique em OK para aplicar as alterações.
 
 **Nota:** Para desativar o proxy após os testes, basta voltar a essa mesma tela e reverter para a opção "Usar as configurações de proxy do sistema".
 
+### Servidor para testar a censura
+Afim de testar o mecanismo de censura, foi desenvolvido para esse projeto um simples servidor HTTP, também implementado em GO [disponível no repositório](https://github.com/Shaarkegas/html_censoring_tests)
+
 ### Transparência no Uso de IA
 Nota: Declaramos de forma transparente como ferramentas de inteligência artificial apoiaram o desenvolvimento do projeto.
 
