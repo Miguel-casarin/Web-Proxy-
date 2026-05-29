@@ -1,7 +1,7 @@
-neverssl.com
-httpforever.com
-http.badssl.com
-captive.apple.com
-detectportal.firefox.com
-www.msftconnecttest.com
-lushsilverquietsunset.neverssl.com
+http://http.badssl.com/
+https://captive.apple.com/
+http://detectportal.firefox.com/success.txt
+http://www.msftconnecttest.com/connecttest.t
+http://httpforever.com/
+http://neverssl.com/
+http://lushsilverquietsunset.neverssl.com/online/

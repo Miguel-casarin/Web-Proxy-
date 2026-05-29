@@ -1,1 +1,62 @@
-[]
+[
+ {
+  "timestamp": "2026-05-28T22:25:25-03:00",
+  "url": "http://http.badssl.com/",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-28T22:25:25-03:00",
+  "url": "http://http.badssl.com/favicon.ico",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-28T22:25:38-03:00",
+  "url": "http://detectportal.firefox.com/canonical.html",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-28T22:25:38-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv4",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-28T22:25:38-03:00",
+  "url": "http://detectportal.firefox.com/success.txt?ipv6",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-28T22:25:38-03:00",
+  "url": "http://www.msftconnecttest.com/connecttest.txt",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-28T22:25:38-03:00",
+  "url": "http://www.msftconnecttest.com/favicon.ico",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-28T22:25:46-03:00",
+  "url": "http://www.msftconnecttest.com/connecttest.txt",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-29T10:06:49-03:00",
+  "url": "http://www.msftconnecttest.com/connecttest.t",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-29T10:06:49-03:00",
+  "url": "http://www.msftconnecttest.com/favicon.ico",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-29T10:08:31-03:00",
+  "url": "http://http.badssl.com/",
+  "action": "bloqueado"
+ },
+ {
+  "timestamp": "2026-05-29T10:08:31-03:00",
+  "url": "http://http.badssl.com/favicon.ico",
+  "action": "bloqueado"
+ }
+]
