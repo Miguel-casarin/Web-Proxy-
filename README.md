@@ -1,78 +1,37 @@
-# Web Proxy com Controle de Conteúdo
+# Web Proxy with Content Control
 
 Miguel Casarim da Silva  
 Guilherme Estrella
 
-Este projeto consiste na implementação de um web proxy didático com controle de conteúdo, desenvolvido para a disciplina de Sistemas para Internet 2. O proxy atua como um intermediário entre o cliente (navegador) e a Internet, interceptando requisições HTTP e HTTPS para repassar, bloquear ou filtrar o conteúdo baseado em regras pré-configuradas.
+This project consists of the implementation of an educational web proxy with content control, developed for the Internet Systems 2 course. The proxy acts as an intermediary between the client (browser) and the Internet, intercepting HTTP and HTTPS requests to forward, block, or filter content based on pre-configured rules.
 
-## Por que escolhemos Go (Golang)?
+## Why Did We Choose Go (Golang)?
 
-A escolha da tecnologia foi fundamentada nos seguintes pilares técnicos da linguagem Go:
+The choice of technology was based on the following technical pillars of the Go language:
 
-* **Ausência de Frameworks Pesados:** A biblioteca padrão do Go (`net/http`) é extremamente robusta. Ela permitiu construir o servidor HTTP, manipular requisições e gerenciar sockets TCP de forma nativa, sem a necessidade de instalar pacotes ou frameworks de terceiros.
-* **Paralelismo e Concorrência Nativa:** Um servidor proxy precisa lidar com múltiplas requisições simultâneas. Go soluciona isso nativamente através das **Goroutines**, que são funções executadas de forma concorrente. Elas consomem uma fração mínima da memória se comparadas às threads tradicionais de sistemas operacionais.
-* **Eficiência no Túnel HTTPS:** Para a implementação do método `CONNECT`, utilizamos Goroutines para ler e copiar o tráfego de dados bidirecionalmente (cliente ↔ servidor de destino) em tempo real, garantindo alta performance e evitando o bloqueio do fluxo principal do servidor.
+* **Absence of Heavy Frameworks:** Go's standard library (`net/http`) is extremely robust. It allowed us to build the HTTP server, manipulate requests, and manage TCP sockets natively, without needing to install third-party packages or frameworks.
+* **Native Concurrency and Parallelism:** A proxy server needs to handle multiple simultaneous requests. Go solves this natively through **Goroutines**, which are functions executed concurrently. They consume a fraction of the memory compared to traditional operating system threads.
+* **HTTPS Tunnel Efficiency:** For the implementation of the `CONNECT` method, we used Goroutines to read and copy bidirectional data traffic (client ↔ destination server) in real-time, ensuring high performance and preventing the server's main flow from blocking.
 
-## Estrutura do Projeto e Lógica dos Arquivos
+## Project Structure and File Logic
 
-O projeto está modularizado para separar claramente as responsabilidades de configuração, registro e manipulação de tráfego.
+The project is modularized to clearly separate the responsibilities of configuration, logging, and traffic handling.
 
-### Diretório Principal e Configurações
-* **`config.go`**: Responsável por ler e carregar na memória os arquivos JSON de regras (`blocked.json` e `words.json`). Contém a lógica `IsBlocked` para verificar a presença de um domínio na lista de bloqueio de forma *case-insensitive*.
-* **`logger.go`**: Registra todas as requisições em um histórico estruturado, armazenando o *Timestamp*, a *URL* e a *Ação* executada. Como o ambiente é concorrente (múltiplas Goroutines acessando o mesmo recurso), foi implementado um `sync.Mutex` para garantir exclusão mútua nas operações de escrita, evitando condições de corrida (*race conditions*) e a corrupção do arquivo de log.
+### Main Directory and Configurations
+* **`config.go`**: Responsible for reading and loading rule JSON files into memory (`blocked.json` and `words.json`). It contains the `IsBlocked` logic to check the presence of a domain in the blocklist in a *case-insensitive* manner.
+* **`logger.go`**: Records all requests in a structured history, storing the *Timestamp*, *URL*, and *Action* performed. Because the environment is concurrent (multiple Goroutines accessing the same resource), a `sync.Mutex` was implemented to guarantee mutual exclusion during write operations, avoiding *race conditions* and log file corruption.
 
-### Handlers (Manipuladores de Requisição)
-* **`proxy_handler.go`**: O roteador principal do proxy. Ele intercepta as requisições, faz o parsing da URL de destino e avalia qual ação tomar com base nas configurações carregadas, direcionando o fluxo para o Handler específico.
-* **`pass_handler.go` (Repasse)**: Utilizado quando o site solicitado é livre. Ele clona a requisição original do cliente, limpa cabeçalhos de codificação incompatíveis (como `Accept-Encoding`) para permitir análise subsequente caso necessário, efetua o disparo ao servidor de destino e devolve a resposta integral ao cliente.
-* **`block_handler.go` (Bloqueio de Sites)**: Se o domínio estiver listado no arquivo de bloqueios, a requisição externa é abortada. O proxy responde diretamente ao cliente com o status `403 Forbidden` e renderiza um template HTML customizado a partir de `templates/blocked.html`.
-* **`filter_handler.go` (Filtro de Conteúdo)**: Realiza a requisição ao site de origem e inspeciona se o `Content-Type` é do tipo `text/html`. Sendo positivo, o corpo da página é interceptado e processado por expressões regulares, que localizam as palavras proibidas de forma *case-insensitive* e as substituem pelos termos equivalentes configurados.
-* **`connect_handler.go` (Tunelamento HTTPS)**: Manipula requisições que utilizam o método HTTP `CONNECT`. Ele estabelece uma conexão TCP pura (`net.Dial`) com o servidor de destino, utiliza o recurso `http.Hijacker` para assumir o controle total do socket TCP do cliente e inicia duas Goroutines paralelas usando `io.Copy` para trafegar os dados criptografados de forma transparente entre as pontas.
+### Request Handlers
+* **`proxy_handler.go`**: The main proxy router. It intercepts requests, parses the destination URL, and evaluates what action to take based on the loaded configurations, directing the flow to the specific Handler.
+* **`pass_handler.go` (Forwarding)**: Used when the requested site is unrestricted. It clones the original client request, clears incompatible encoding headers (such as `Accept-Encoding`) to allow subsequent analysis if necessary, dispatches the request to the destination server, and returns the full response to the client.
+* **`block_handler.go` (Site Blocking)**: If the domain is listed in the blocklist file, the external request is aborted. The proxy responds directly to the client with a `403 Forbidden` status and renders a custom HTML template from `templates/blocked.html`.
+* **`filter_handler.go` (Content Filter)**: Makes the request to the origin site and inspects whether the `Content-Type` is `text/html`. If positive, the page body is intercepted and processed by regular expressions, which locate forbidden words in a *case-insensitive* manner and replace them with the configured equivalent terms.
+* **`connect_handler.go` (HTTPS Tunneling)**: Handles requests using the HTTP `CONNECT` method. It establishes a pure TCP connection (`net.Dial`) with the destination server, uses the `http.Hijacker` feature to take full control of the client's TCP socket, and starts two parallel Goroutines using `io.Copy` to transparently route encrypted data between endpoints.
 
-## Pré-requisitos e Instalação
+## Prerequisites and Installation
 
-1. **Instalar o Go:** Certifique-se de ter o Go instalado em sua máquina (versão 1.25 ou mais recentes). Download disponível em [go.dev](https://go.dev/dl/).
-2. **Clonar o Repositório:**
+1. **Install Go:** Make sure you have Go installed on your machine (version 1.25 or newer). Downloads available at [go.dev](https://go.dev/dl/).
+2. **Clone the Repository:**
    ```bash
-   git clone <https://github.com/Miguel-casarin/Web-Proxy->
-   cd <Web-Proxy->
-3. Dependências Externas: Nenhuma. O projeto utiliza os pacotes nativos da biblioteca padrão do Go.
-
-### Configuração das Listas de Controle
-O comportamento do proxy é ditado por dois arquivos JSON localizados na raiz do projeto:
-
-1. `blocked.json` (Lista de Sites Bloqueados):
-2. `words.json` (Filtro de Termos):
-
-### Como Executar o Proxy
-Abra o terminal na pasta raiz do projeto e execute o comando:
-
-    go run .
-
-O proxy será iniciado localmente e ficará ouvindo novas requisições na porta 5000.
-
-### Configuração do Navegador (Firefox)
-Para que o tráfego do navegador seja interceptado e processado pelas regras do proxy, é obrigatório realizar a configuração no browser. Nossos testes e validações foram executados no Mozilla Firefox seguindo as etapas abaixo:
-
-1. Acesse as Configurações.
-
-2. Localize Configuracoes de proxy e acesse a opção "Configurar proxy"
-
-3. Marque a opção "Configuração manual de proxy"
-
-4. Na caixa "Proxy HTTP", defina o endereço como localhost e defina a Porta como 5000.
-
-5. Marque a opção "Usar este proxy também em HTTPS" (esta etapa é essencial para que o método CONNECT no connect_handler.go funcione corretamente em sites seguros).
-
-Clique em OK para aplicar as alterações.
-
-**Nota:** Para desativar o proxy após os testes, basta voltar a essa mesma tela e reverter para a opção "Usar as configurações de proxy do sistema".
-
-### Servidor para testar a censura
-Afim de testar o mecanismo de censura, foi desenvolvido para esse projeto um simples servidor HTTP, também implementado em GO [disponível no repositório](https://github.com/Shaarkegas/html_censoring_tests)
-
-### Transparência no Uso de IA
-Nota: Declaramos de forma transparente como ferramentas de inteligência artificial apoiaram o desenvolvimento do projeto.
-
-Ferramentas utilizadas: Claude
-
-Como foram usadas: Atuaram de forma consultiva para sanar dúvidas sobre convenções de nomenclatura da linguagem (como o uso de Pascal Case para exportação de funções), estruturação de expressões regulares eficientes no pacote regexp e para compreender o funcionamento prático do http.Hijacker na transição do fluxo HTTP para sockets TCP brutos.
+   git clone [https://github.com/Miguel-casarin/Web-Proxy-](https://github.com/Miguel-casarin/Web-Proxy-)
+   cd Web-Proxy-
